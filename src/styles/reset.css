@@ -1,0 +1,63 @@
+@layer reset, base, layout, screens, responsive;
+
+@layer reset {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button,
+fieldset,
+legend {
+  padding: 0;
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  min-width: 280px;
+  min-height: 100svh;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+}
