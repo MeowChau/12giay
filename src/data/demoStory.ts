@@ -7,7 +7,7 @@ const decisionTitles = ['Lựa chọn 01', 'Lựa chọn 02', 'Lựa chọn 03',
 
 function makeDemoScenes(role: Role): NarrativeScene[] {
   const speaker = role === 'an' ? 'An' : 'Khải'
-  const line = (id: string, text: string, type: StoryLine['type'] = 'narration'): StoryLine => ({ id, speaker: type === 'narration' ? '12 GIÂY' : speaker, text, type })
+  const line = (id: string, text: string, type: StoryLine['type'] = 'narration'): StoryLine => ({ id, speaker: type === 'narration' ? 'Dấu chân' : speaker, text, type })
   return [
     {
       id: `${role}_intro`, role, kind: 'intro', title: 'Tiếng cười', location: 'Hành lang · Thứ Sáu',

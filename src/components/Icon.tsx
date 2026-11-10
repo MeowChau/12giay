@@ -1,4 +1,4 @@
-type IconName = 'arrow' | 'back' | 'help' | 'close' | 'play' | 'external' | 'check' | 'shield' | 'music' | 'musicOff'
+type IconName = 'arrow' | 'back' | 'help' | 'close' | 'play' | 'external' | 'check' | 'shield' | 'music' | 'musicOff' | 'footsteps'
 
 const paths: Record<IconName, string> = {
   arrow: 'M4 12h15m-6-6 6 6-6 6',
@@ -11,6 +11,7 @@ const paths: Record<IconName, string> = {
   shield: 'M12 3 3 7v5c0 5 9 9 9 9s9-4 9-9V7l-9-4Zm-4 9 3 3 5-5',
   music: 'M9 18V5l11-2v13M9 8l11-2M9 18a3 3 0 1 1-3-3c1.7 0 3 1.3 3 3Zm11-2a3 3 0 1 1-3-3c1.7 0 3 1.3 3 3Z',
   musicOff: 'm3 3 18 18M9 9v9a3 3 0 1 1-3-3m3-10 11-2v13m-7-9 7-1',
+  footsteps: 'M8 3c-2 0-3 3-3 5s1 4 3 4 3-2 3-4-1-5-3-5Zm-2 12v2a2 2 0 0 0 4 0v-2H6Zm10-8c-2 0-3 3-3 5s1 4 3 4 3-2 3-4-1-5-3-5Zm-2 12v1a2 2 0 0 0 4 0v-1h-4Z',
 }
 
 export default function Icon({ name, className = '' }: { name: IconName; className?: string }) {

@@ -134,7 +134,7 @@ function App() {
     <div className="app-shell">
       <a className="skip-link" href="#main-content">Đến nội dung chính</a>
       <header className="topbar">
-        <button className="brand" onClick={goToMenu} aria-label="12 GIÂY — Về trang đầu"><span className="brand-mark">12</span><span className="brand-copy"><strong>12 GIÂY</strong><span>Sự thật ngoài khung hình</span></span></button>
+        <button className="brand" onClick={goToMenu} aria-label="Dấu chân — Về trang đầu"><span className="brand-mark"><Icon name="footsteps"/></span><span className="brand-copy"><strong>Dấu chân</strong><span>Sự thật ngoài khung hình</span></span></button>
         <div className="topbar-actions">{import.meta.env.VITE_BGM_AVAILABLE === 'true' && <BackgroundMusic/>}{activeScreen !== 'landing' && activeScreen !== 'warning' && <button className="nav-button menu-button" onClick={goToMenu}>Về menu</button>}<button className={`nav-button ${activeScreen === 'support' ? 'is-active' : ''}`} onClick={openSupport}><Icon name="help"/><span>Nơi tìm hỗ trợ</span></button></div>
       </header>
       <main id="main-content" className={`main-content main-content--${activeScreen}`} tabIndex={-1} ref={mainRef}>
@@ -168,7 +168,7 @@ function App() {
         {activeScreen === 'support' && <SupportScreen content={supportContent} onBack={() => setScreen(returnScreen)}/>}
       </main>
       <footer className="preview-bar">
-        <div className="preview-label"><span className="preview-dot"/> 12 GIÂY · DEMO <span className="preview-note">{activeScreen === 'epilogue' ? 'True Ending' : game.role === 'an' ? 'Góc nhìn An' : 'Góc nhìn Khải'}</span></div>
+        <div className="preview-label"><span className="preview-dot"/> Dấu chân · DEMO <span className="preview-note">{activeScreen === 'epilogue' ? 'True Ending' : game.role === 'an' ? 'Góc nhìn An' : 'Góc nhìn Khải'}</span></div>
         <nav className="preview-navigation" aria-label="Điều hướng">{previewScreens.map(item => <button key={item.id} disabled={!canNavigate(item.id)} className={activeScreen === item.id ? 'is-active' : ''} aria-current={activeScreen === item.id ? 'page' : undefined} onClick={() => navigate(item.id)}>{item.label}</button>)}</nav>
       </footer>
     </div>

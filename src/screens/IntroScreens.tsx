@@ -28,7 +28,7 @@ export function LandingScreen({ progress, onStart, onSupport, onReview }: { prog
       <div className="landing-shade" />
       <div className="landing-copy">
         <p className="eyebrow"><span className="small-line" /> Một câu chuyện. Hai góc nhìn.</p>
-        <h1 className="game-title"><span>12</span><span>GIÂY<span className="title-period">.</span></span></h1>
+        <h1 className="game-title">Dấu chân<span className="title-period">.</span></h1>
         <p className="game-subtitle">Sự thật ngoài khung hình</p>
         <p className="landing-quote">“Một đoạn video không thể kể hết<br className="desktop-break" /> câu chuyện của một con người.”</p>
         <div className="landing-actions"><button className="button button--primary" onClick={onStart}>Bắt đầu <Icon name="arrow" /></button><button className="text-button" onClick={onSupport}>Nơi tìm hỗ trợ</button></div>
